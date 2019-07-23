@@ -1,0 +1,20 @@
+{
+  "name": "webserver",
+  "version": "1.0.0",
+  "description": "This is the data by Girmay",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "data\u001b[D\u001b[D\u001b[D\u001b[",
+    "\u001b[3~\u001b[3~\u001b[3~\u001b[3~data",
+    "selfie"
+  ],
+  "author": "Girmay Hailu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
