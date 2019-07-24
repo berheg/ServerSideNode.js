@@ -19,7 +19,7 @@
                         document.getElementById('latitude').textContent = lat;
                         document.getElementById('longitude').textContent = lon;
                         console.log(postion);
-                        /*const data = { lat, lon};                        
+                        const data = { lat, lon};                        
                         const options = {
                             method: 'POST',
                             header: {
@@ -27,7 +27,7 @@
                             },
                             body: JSON.stringify(data)
                         };
-                        fetch('/api',options);*/
+                        fetch('/api',options);
                 });
             }else{
                 console.log('Geolocation not aviliable');
