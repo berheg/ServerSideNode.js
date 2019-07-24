@@ -13,7 +13,7 @@
         <script>
             if('geolocation' in navigator){
                     console.log('Geolocation Avialiable')
-                    navigator.geolocation.getCurrentPosition(postion => {
+                    navigator.geolocation.getCurrentPosition(async postion => {
                         const lat = postion.coords.latitude;
                         const lon = postion.coords.longitude;
                         document.getElementById('latitude').textContent = lat;
@@ -27,9 +27,10 @@
                             },
                             body: JSON.stringify(data)
                         };
-                        fetch('/api',options).then(response => {
-                            console.log(response);
-                        });
+                        const response = await fetch('/api',options)
+                        const json = await response.json();
+                            console.log(json);
+                        
                 });
             }else{
                 console.log('Geolocation not aviliable');
